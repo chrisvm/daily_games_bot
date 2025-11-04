@@ -61,8 +61,12 @@ class DailyGamesBot(commands.Bot):
         logging.info(
             "Posting daily thread #%s with title %r", config.current_post_number, title
         )
+
+        # TODO: implement creating content
+        content = None
+
         # TODO: Uncomment when ready to integrate with Discord API.
-        thread = await forum_channel.create_thread(name=title, content=content)
+        await forum_channel.create_thread(name=title, content=content)
 
         config.current_post_number += 1
         await self.config_manager.persist()
