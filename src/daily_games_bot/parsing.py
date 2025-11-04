@@ -42,7 +42,10 @@ https://cluesbysam.com'
 https://kindahard.golf'
 """
 
+from sqlmodel import SQLModel
+
 
 class ResultsParsing:
     # todo: implement the parsing to extract
-    ...
+    def parse(result: str) -> SQLModel:
+        pass
