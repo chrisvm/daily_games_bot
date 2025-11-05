@@ -17,3 +17,5 @@ localdata/
 
 # ruff stuff
 .ruff_cache/
+
+.vscode/
